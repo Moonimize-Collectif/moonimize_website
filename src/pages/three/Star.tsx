@@ -9,7 +9,7 @@ function Star({ children, color, ...props }) {
     return (
         <mesh
             {...props}
-            scale={1}
+            scale={0.02}
             ref={mesh}>
             {children}
             {/* Now, in order to get selective bloom we simply crank colors out of
@@ -54,7 +54,7 @@ export default function StarComponent(props) {
     }, [shining])
     return (
         <Star color={[shining, shining, shining]} position={position}>
-            <sphereGeometry args={[0.05, 10]} />
+            <octahedronGeometry args={[1, 0]} />
         </Star>
     )
 }

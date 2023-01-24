@@ -37,9 +37,9 @@ function Moon({children, color, ...props }) {
   const [hovered, setHover] = useState(false)
   const [active, setActive] = useState(false)
   // Subscribe this component to the render-loop, rotate the mesh every frame
-  useFrame((state, delta) => (mesh.current.rotation.y += delta / 3))
+  useFrame((state, delta) => (mesh.current.rotation.y += delta / 4))
   // Return view, these are regular three.js elements expressed in JSX
-  let texture = useLoader(Three.TextureLoader, 'assets/moon_texture_8k.png')
+  let texture = useLoader(Three.TextureLoader, 'assets/moon_texture_lowpoly.png')
 
   return (
     <mesh
@@ -99,21 +99,21 @@ export default function background_landing_page() {
 
   useEffect(() => {
     if (plus) {
-      setPositionX(positionX => positionX + 0.02)
+      setPositionX(positionX => positionX + 0.04)
     } else {
-      setPositionX(positionX => positionX - 0.02)
+      setPositionX(positionX => positionX - 0.04)
     }
     if (plusY) {
-      setPositionY(positionY => positionY + 0.02)
+      setPositionY(positionY => positionY + 0.04)
     }
     else {
-      setPositionY(positionY => positionY - 0.02)
+      setPositionY(positionY => positionY - 0.04)
     }
     if (plusZ) {
-      setPositionZ(positionZ => positionZ + 0.02)
+      setPositionZ(positionZ => positionZ + 0.08)
     }
     else {
-      setPositionZ(positionZ => positionZ - 0.02)
+      setPositionZ(positionZ => positionZ - 0.08)
     }
    
   }, [time])
@@ -131,10 +131,10 @@ export default function background_landing_page() {
     else if (positionY < -40) {
       setPlusY(plusY => true)
     }
-    if (positionZ > 50) {
+    if (positionZ > 20) {
       setPlusZ(plusZ => false)
     }
-    else if (positionZ < -40) {
+    else if (positionZ < -100) {
       setPlusZ(plusZ => true)
     }
   }, [positionX, positionY, positionZ])
@@ -146,8 +146,8 @@ export default function background_landing_page() {
 
   return (
     <Canvas camera={{ zoom: 1, fov: 10, near: 0.01, far: 1000, position: [0, 0, -45] }}>
-      <pointLight position={[positionX, positionY, positionZ]} color={0x1acad5} intensity={20} power={10}/>
-      <Moon color={[-1, -1, -1]} position={[0, 0, 0]}>
+      <pointLight position={[positionX, positionY, positionZ]} color={0x33cbd1} intensity={20} power={30}/>
+      <Moon color={[1, 1, 1]} position={[0, 0, 0]}>
         <sphereGeometry args={[1, 200,200]} />
       </Moon>
      <Effects disableGamma>
