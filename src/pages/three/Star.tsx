@@ -22,7 +22,7 @@ function Star({ children, color, ...props }) {
 }
 export default function StarComponent(props) {
     const { position } = props
-    const [shining, setShining] = useState(Math.floor(Math.random() * (5 - 0 + 1) + 0))
+    const [shining, setShining] = useState(Math.floor(Math.random() * (5 - 0 + 1) + 6))
     const [bloom, setBloom] = useState(0)
     const [shiningPlus, setShiningPlus] = useState(false)
 
@@ -42,10 +42,10 @@ export default function StarComponent(props) {
     }, [bloom])
 
     useEffect(() => {
-        if (shining >= 1) {
+        if (shining >= 6) {
             setShiningPlus(true)
         }
-        if (shining <= 0) {
+        if (shining <= 0.5) {
             setShiningPlus(false)
         }
     }, [shining])
@@ -54,7 +54,7 @@ export default function StarComponent(props) {
     }, [shining])
     return (
         <Star color={[shining, shining, shining]} position={position}>
-            <octahedronGeometry args={[1, 0]} />
+            <sphereGeometry args={[2, 20,20]} />
         </Star>
     )
 }
