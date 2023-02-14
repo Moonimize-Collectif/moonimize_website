@@ -15,10 +15,16 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main style={{width: "100%", height:"100%"}}>
+      <main style={{width: "100%", height:"100%", position:"relative"}}>
         <ThreeLandingBackground/>
-        <TitleScreen firstTitle={"MOONIMIZE"} secondTitle={"Collectif"} marginTop={"0"} marginBottom={"0"} 
-        colorFirstTitle={"Black"} colorSecondTitle={"#1ACAD5"} sizeSecondTitle={"170px"} sizeFirstTitle={"150px"}/>
+        <div style={{width: "100%", position:"absolute", top:"36%"}}>
+            <TitleScreen firstTitle={"MOONIMIZE"} secondTitle={"Collectif"} marginTop={"0"} marginBottom={"0"} 
+            colorFirstTitle={"white"} colorSecondTitle={"#1ACAD5"} sizeSecondTitle={"140px"} sizeFirstTitle={"120px"} textAlign={"center"} paddingLeft={"0"}/>
+        </div>
+        <TitleScreen firstTitle={"NOS SERVICES"} secondTitle={"Ce que l'on sait faire"} marginTop={"0"} marginBottom={"0"} 
+            colorFirstTitle={"black"} colorSecondTitle={"#1ACAD5"} sizeSecondTitle={"50px"} sizeFirstTitle={"60px"} textAlign={""} paddingLeft={"3%"}/>
+        <TitleScreen firstTitle={"PROCESS"} secondTitle={"comment ça marche ?"} marginTop={"10%"} marginBottom={"0"} 
+            colorFirstTitle={"black"} colorSecondTitle={"#1ACAD5"} sizeSecondTitle={"50px"} sizeFirstTitle={"60px"} textAlign={""} paddingLeft={"3%"}/>
       </main>
     </div>
   )

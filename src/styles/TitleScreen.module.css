@@ -8,17 +8,16 @@
 
 .divTitle{
     position: relative;
-    text-align: center;
+    width: 100%;
 }
 .firstTitle {
     width: 100%;
     position: absolute; 
-    top: 51%;
+    top: 45%;
     font-family: 'Chakra Petch', sans-serif;
 }
 
 .secondTitle {
-    margin: auto;
     font-family: "Milki Walki";
     font-weight: 500;
 }
