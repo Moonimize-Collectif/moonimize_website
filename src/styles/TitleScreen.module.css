@@ -1,0 +1,25 @@
+/* FONTS */
+@font-face {
+    font-family: 'Milki Walki';
+    src: url('fonts/MilkyWalky-Regular.otf');
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@700&display=swap');
+
+.divTitle{
+    position: relative;
+    text-align: center;
+}
+.firstTitle {
+    width: 100%;
+    position: absolute; 
+    top: 51%;
+    font-family: 'Chakra Petch', sans-serif;
+}
+
+.secondTitle {
+    margin: auto;
+    font-family: "Milki Walki";
+    font-weight: 500;
+}
+

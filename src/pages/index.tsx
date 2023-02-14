@@ -17,10 +17,8 @@ export default function Home() {
       </Head>
       <main style={{width: "100%", height:"100%"}}>
         <ThreeLandingBackground/>
-        <TitleScreen firstTitle={"Moonimize"} secondTitle={"Collectif"} marginTop={"0"} marginBottom={"0"} 
-        colorFirstTitle={"Black"} colorSecondTitle={"#1ACAD5"} fontFirstTitle={""} fontSecondTitle={""} 
-        sizeSecondTitle={"15px"}
-        sizeFirstTitle={"50px"}/>
+        <TitleScreen firstTitle={"MOONIMIZE"} secondTitle={"Collectif"} marginTop={"0"} marginBottom={"0"} 
+        colorFirstTitle={"Black"} colorSecondTitle={"#1ACAD5"} sizeSecondTitle={"170px"} sizeFirstTitle={"150px"}/>
       </main>
     </div>
   )
