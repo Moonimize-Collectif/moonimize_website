@@ -1,5 +1,11 @@
 .divCardProcess{
-    /* background: rgba(255, 255, 255, 0.10); */
-    background: red;
+    background: rgba(255, 255, 255, 0.10);
+}
+.pCard , .titleCard, .describCard {
+    font-family: ChakraPetch;
+}
+.pCard {
+    font-size: 50px;
+    color: #1ACAD5;
 }
 

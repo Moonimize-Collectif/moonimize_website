@@ -28,6 +28,12 @@ export default function Home() {
         <TitleScreen firstTitle={"PROCESS"} secondTitle={"comment ça marche ?"} marginTop={"10%"} marginBottom={"5%"} 
           colorFirstTitle={"black"} colorSecondTitle={"#1ACAD5"} sizeSecondTitle={"50px"} sizeFirstTitle={"60px"} textAlign={""} paddingLeft={"3%"}/>
         <CardProcess number={"001"} title={"Découverte"} description={"Nous nous entretenons avec vous afin de comprendre vos enjeux et vos besoins."}/>
+        <CardProcess number={"002"} title={"Découverte"} description={"Nous nous entretenons avec vous afin de comprendre vos enjeux et vos besoins."}/>
+        <CardProcess number={"003"} title={"Découverte"} description={"Nous nous entretenons avec vous afin de comprendre vos enjeux et vos besoins."}/>
+        <CardProcess number={"004"} title={"Découverte"} description={"Nous nous entretenons avec vous afin de comprendre vos enjeux et vos besoins."}/>
+        <CardProcess number={"005"} title={"Découverte"} description={"Nous nous entretenons avec vous afin de comprendre vos enjeux et vos besoins."}/>
+        <CardProcess number={"006"} title={"Découverte"} description={"Nous nous entretenons avec vous afin de comprendre vos enjeux et vos besoins."}/>
+
       </div>
       
 
