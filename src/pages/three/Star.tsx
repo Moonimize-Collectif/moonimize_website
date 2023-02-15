@@ -3,7 +3,7 @@ import { extend } from '@react-three/fiber'
 import { UnrealBloomPass } from 'three-stdlib'
 extend({ UnrealBloomPass })
 
-function Star({ children, color, ...props } : any) {
+export const Star = ({ children, color, ...props }: any) => {
     // This reference will give us direct access to the mesh
     const mesh = useRef()
     return (
@@ -20,7 +20,7 @@ function Star({ children, color, ...props } : any) {
         </mesh>
     )
 }
-export default function StarComponent(props : any) {
+export const StarComponent = (props : any) => {
     const { position } = props
     const [shining, setShining] = useState(Math.floor(Math.random() * (5 - 0 + 1) + 6))
     const [bloom, setBloom] = useState(0)
