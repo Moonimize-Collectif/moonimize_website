@@ -1,10 +1,10 @@
 .navbar {
-  width: 80%;
+  width: 84%;
   height: 74px;
   /* background-color: red; */
   position: fixed;
   top: 34px;
-  z-index: 2;
+  z-index: 3;
   background: rgba(255, 255, 255, 0.10);
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(5px);
@@ -48,14 +48,3 @@
   color: rgba(255, 255, 255, 0.4)
 }
 
-.navbar ul li:first-child {
-  border-left: thin solid rgba(255, 255, 255, 0.3);
-}
-
-.navbar ul li:last-child {
-  border-right: thin solid rgba(255, 255, 255, 0.3);
-}
-
-.navbar ul li:not(:last-child), .navbar ul li:not(:first-child) {
-  border-left: thin solid rgba(255, 255, 255, 0.3);
-}
