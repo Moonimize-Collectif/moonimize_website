@@ -73,6 +73,12 @@
   }
 }
 
+
+@font-face {
+  font-family: 'MilkiWalki';
+  src: url('fonts/MilkyWalky-Regular.otf');
+}
+
 @font-face {
   font-family: 'ChakraPetch';
   src: url('../../public/assets/fonts/ChakraPetch/ChakraPetch-Regular.ttf');
@@ -118,3 +124,5 @@ a {
     color-scheme: dark;
   }
 }
+
+

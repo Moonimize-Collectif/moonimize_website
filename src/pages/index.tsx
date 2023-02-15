@@ -2,6 +2,7 @@ import Head from 'next/head'
 import Image from 'next/image'
 import { Inter } from '@next/font/google'
 import styles from '@/styles/Home.module.css'
+import TitleScreen from '@/components/TitleScreen'
 import {ThreeBackground} from '@/pages/three/BackgroundThreeJS'
 import {Footer} from "@/components/Footer";
 
@@ -16,7 +17,17 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
+
       <ThreeBackground/>
+      <div style={{width: "100%", position:"absolute", top:"36%"}}>
+          <TitleScreen firstTitle={"MOONIMIZE"} secondTitle={"Collectif"} marginTop={"0"} marginBottom={"0"} 
+          colorFirstTitle={"white"} colorSecondTitle={"#1ACAD5"} sizeSecondTitle={"140px"} sizeFirstTitle={"120px"} textAlign={"center"} paddingLeft={"0"}/>
+      </div>
+      <TitleScreen firstTitle={"NOS SERVICES"} secondTitle={"Ce que l'on sait faire"} marginTop={"0"} marginBottom={"0"} 
+          colorFirstTitle={"black"} colorSecondTitle={"#1ACAD5"} sizeSecondTitle={"50px"} sizeFirstTitle={"60px"} textAlign={""} paddingLeft={"3%"}/>
+      <TitleScreen firstTitle={"PROCESS"} secondTitle={"comment ça marche ?"} marginTop={"10%"} marginBottom={"0"} 
+          colorFirstTitle={"black"} colorSecondTitle={"#1ACAD5"} sizeSecondTitle={"50px"} sizeFirstTitle={"60px"} textAlign={""} paddingLeft={"3%"}/>
+
     </div>
   )
 }
