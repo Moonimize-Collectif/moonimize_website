@@ -3,7 +3,7 @@ import React, { useRef, useState, useEffect } from 'react'
 import { Canvas, useFrame, useLoader, extend } from '@react-three/fiber'
 import { DirectionalLight, PointLight } from "three"
 
-function Moon({ children, refObject, color, ...props }) {
+function Moon({ children, refObject, color, ...props } : any) {
     // This reference will give us direct access to the mesh
     // Set up state for the hovered and active state
     const [hovered, setHover] = useState(false)

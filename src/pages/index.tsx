@@ -3,6 +3,7 @@ import Image from 'next/image'
 import { Inter } from '@next/font/google'
 import styles from '@/styles/Home.module.css'
 import ThreeLandingBackground from '@/pages/three/background_landing_page'
+import {Footer} from "@/components/Footer";
 const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
@@ -15,7 +16,8 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main style={{width: "100%", height:"100%"}}>
-        <ThreeLandingBackground/>
+          <Footer/>
+          <ThreeLandingBackground/>
       </main>
     </div>
   )
