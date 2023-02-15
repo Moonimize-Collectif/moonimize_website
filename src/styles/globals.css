@@ -73,6 +73,12 @@
   }
 }
 
+
+@font-face {
+  font-family: 'MilkiWalki';
+  src: url('fonts/MilkyWalky-Regular.otf');
+}
+
 * {
   box-sizing: border-box;
   padding: 0;
@@ -111,3 +117,5 @@ a {
     color-scheme: dark;
   }
 }
+
+

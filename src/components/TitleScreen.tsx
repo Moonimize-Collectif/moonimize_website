@@ -1,5 +1,6 @@
 import React from 'react'
 import styles from '@/styles/TitleScreen.module.css'
+import globalStyle from '../styles/globals.css'
 
 // Component allowing to display an adaptable title and subtitle with an adaptable top and bottom margin, titile's color,
 // size and font.

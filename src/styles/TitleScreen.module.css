@@ -1,11 +1,3 @@
-/* FONTS */
-@font-face {
-    font-family: 'Milki Walki';
-    src: url('fonts/MilkyWalky-Regular.otf');
-}
-
-@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@700&display=swap');
-
 .divTitle{
     position: relative;
     width: 100%;
@@ -14,11 +6,11 @@
     width: 100%;
     position: absolute; 
     top: 45%;
-    font-family: 'Chakra Petch', sans-serif;
+    font-family: ChakraPetch;
 }
 
 .secondTitle {
-    font-family: "Milki Walki";
+    font-family: MilkiWalki;
     font-weight: 500;
 }
 
