@@ -4,6 +4,7 @@ import { Inter } from '@next/font/google'
 import styles from '@/styles/Home.module.css'
 import TitleScreen from '@/components/TitleScreen'
 import {ThreeBackground} from '@/pages/three/BackgroundThreeJS'
+import { CardProcess } from '@/components/CardProcess'
 const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
@@ -23,8 +24,12 @@ export default function Home() {
       </div>
       <TitleScreen firstTitle={"NOS SERVICES"} secondTitle={"Ce que l'on sait faire"} marginTop={"0"} marginBottom={"0"} 
           colorFirstTitle={"black"} colorSecondTitle={"#1ACAD5"} sizeSecondTitle={"50px"} sizeFirstTitle={"60px"} textAlign={""} paddingLeft={"3%"}/>
-      <TitleScreen firstTitle={"PROCESS"} secondTitle={"comment ça marche ?"} marginTop={"10%"} marginBottom={"0"} 
+      <div>
+        <TitleScreen firstTitle={"PROCESS"} secondTitle={"comment ça marche ?"} marginTop={"10%"} marginBottom={"5%"} 
           colorFirstTitle={"black"} colorSecondTitle={"#1ACAD5"} sizeSecondTitle={"50px"} sizeFirstTitle={"60px"} textAlign={""} paddingLeft={"3%"}/>
+        <CardProcess number={"001"} title={"Découverte"} description={"Nous nous entretenons avec vous afin de comprendre vos enjeux et vos besoins."}/>
+      </div>
+      
 
     </div>
   )
