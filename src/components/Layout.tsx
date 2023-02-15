@@ -1,8 +1,9 @@
 // components/layout.js
 import { Navbar } from './Navbar';
-// import Footer from './footer'
 import styles from '@/styles/Layout.module.css';
 import {BackgroundLine} from '@/components/BackgroundLine'
+import {Footer} from "@/components/Footer";
+
 export default function Layout({ children }:any) {
   return (
     
@@ -10,7 +11,7 @@ export default function Layout({ children }:any) {
       <BackgroundLine></BackgroundLine>
       <Navbar />
       <main style={{width: "100%", height:"100%"}}>{children}</main>
-      {/* <Footer /> */}
+        <Footer />
     </div>
   )
 }

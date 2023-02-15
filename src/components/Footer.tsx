@@ -6,7 +6,6 @@ import Link from 'next/link';
 export const Footer = () => {
     return (
         <nav className={styles.footer}>
-            init();
                 <MoonimizeButton  />
         </nav>
     );
