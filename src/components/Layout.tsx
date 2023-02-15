@@ -1,7 +1,7 @@
 // components/layout.js
 import { Navbar } from './Navbar';
 import Head from 'next/head'
-import {ThreeBackground} from '@/pages/three/BackgroundThreeJS'
+import {ThreeBackground} from '@/components/three/BackgroundThreeJS'
 
 // import Footer from './footer'
 import styles from '@/styles/Layout.module.css';

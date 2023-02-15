@@ -9,7 +9,7 @@ export const Star = ({ children, color, ...props }: any) => {
     return (
         <mesh
             {...props}
-            scale={0.02}
+            scale={0.01}
             ref={mesh}>
             {children}
             {/* Now, in order to get selective bloom we simply crank colors out of

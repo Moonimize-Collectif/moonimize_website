@@ -5,7 +5,6 @@ import { Effects } from '@react-three/drei'
 import { UnrealBloomPass } from 'three-stdlib'
 import { StarComponent } from './Star'
 import styles from '@/styles/BackgroundThreeJS.module.css'
-import { RotatingLight } from "./RotatingLight"
 extend({ UnrealBloomPass })
 
 
@@ -92,11 +91,6 @@ export const ThreeBackground = () => {
             return <StarComponent key={index} position={star.coordinates} />
           })
           }
-        </Canvas>
-      </div>
-      <div className={styles.MoonDiv}>
-        <Canvas camera={{ zoom: 1, fov: 10, near: 0.01, far: 1000, position: [0, 0, -45] }}>
-          <RotatingLight />
         </Canvas>
       </div>
     </div>
