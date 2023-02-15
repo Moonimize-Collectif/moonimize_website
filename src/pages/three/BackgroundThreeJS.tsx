@@ -3,9 +3,9 @@ import React, { useRef, useState, useEffect } from 'react'
 import { Canvas, useFrame, useLoader, extend } from '@react-three/fiber'
 import { Effects } from '@react-three/drei'
 import { UnrealBloomPass } from 'three-stdlib'
-import StarComponent from './Star'
+import {StarComponent} from './Star'
 import SunMoon from "./SunMoon"
-import RotatingLight from "./rotatingLight"
+import {RotatingLight} from "./RotatingLight"
 extend({ UnrealBloomPass })
 
 
@@ -33,13 +33,18 @@ function Box(props: any) {
 }
 
 function randomCoordinates() {
-  let z = Math.floor(Math.random() * (500 - 10 + 1) + 100)
+  let z = Math.floor(Math.random() * (200 - 10 + 1) + 100)
   //let x = Math.floor(Math.random() * 60) + -30
-  let x = Math.random() >= 0.5 ? Math.random() * (-(8.1 + (z * 0.158)) - (0 + (z * 0.158)) + 1) + (0 + (z * 0.158)) : Math.random() * ((8.1 + (z * 0.158)) - (0 + (z * 0.158)) + 1) + (0 + (z * 0.158));
-  let y = x > 1 + (z * 0.158 / 2) ?
+  //let x = Math.random() >= 0.5 ? Math.random() * (-(8.1 + (z * 0.158)) - (0 + (z * 0.158)) + 1) + (0 + (z * 0.158)) : Math.random() * ((8.1 + (z * 0.158)) - (0 + (z * 0.158)) + 1) + (0 + (z * 0.158));
+ /* let y = x > 1 + (z * 0.158 / 2) ?
     Math.random() >= 0.5 ? Math.random() * (-(8 / 2 + (z * 0.158 / 2)) - (0 + (z * 0.158 / 2)) + 1) + (0 + (z * 0.158 / 2)) : Math.random() * ((8 / 2 + (z * 0.158 / 2)) - (0 + (z * 0.158 / 2)) + 1) + (0 + (z * 0.158 / 2))
-    : Math.random() >= 0.5 ? Math.random() * (-(8 / 2 + (z * 0.158 / 2)) - (1 + (z * 0.158 / 2)) + 1) + (1 + (z * 0.158 / 2)) : Math.random() * ((8 / 2 + (z * 0.158 / 2)) - (1 + (z * 0.158 / 2)) + 1) + (1 + (z * 0.158 / 2));
-  //let y = Math.floor(Math.random() * 30) + -15
+    : Math.random() >= 0.5 ? Math.random() * (-(8 / 2 + (z * 0.158 / 2)) - (1 + (z * 0.158 / 2)) + 1) + (1 + (z * 0.158 / 2)) : Math.random() * ((8 / 2 + (z * 0.158 / 2)) - (1 + (z * 0.158 / 2)) + 1) + (1 + (z * 0.158 / 2));*/
+  let minX = (-(8.1 + (z * 0.158)) - (0 + (z * 0.158)) + 1) + (0 + (z * 0.158))
+  let maxX = ((8.1 + (z * 0.158)) - (0 + (z * 0.158)) + 1) + (0 + (z * 0.158))
+  let minY = (-(8 / 2 + (z * 0.158 / 2)) - (0 + (z * 0.158 / 2)) + 1) + (0 + (z * 0.158 / 2))
+  let maxY = ((8 / 2 + (z * 0.158 / 2)) - (0 + (z * 0.158 / 2)) + 1) + (0 + (z * 0.158 / 2))
+  let x = Math.floor(Math.random() * (maxX + 30) + (minX)-2)
+  let y = Math.floor(Math.random() * (maxY + 20) + (minY) - 2)
   return [x, y, z]
 }
 
@@ -60,9 +65,9 @@ const Sphere = () => {
   );
 };
 
-export default function background_landing_page() {
+export const ThreeBackground = () => {
   const [time, setTime] = useState(0)
-  const [maxStars, setMaxStars] = useState(100)
+  const [maxStars, setMaxStars] = useState(200)
   const [stars, setStars] = useState([])
 
   useEffect(() => {
@@ -70,13 +75,11 @@ export default function background_landing_page() {
     for (let i = 0; i < maxStars; i++) {
       test.push({ coordinates: randomCoordinates() })
     }
-    console.log(test.length)
     setStars(stars => test)
     setInterval(() => {
       setTime(time => time + 1)
     }, 100)
   }, [])
-  const lightRef = useRef();
 
   return (
     <Canvas antialias camera={{ zoom: 1, fov: 10, near: 0.01, far: 1000, position: [0, 0, -45] }}>
