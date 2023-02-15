@@ -82,7 +82,7 @@ export const ThreeBackground = () => {
   }, [])
 
   return (
-    <Canvas antialias camera={{ zoom: 1, fov: 10, near: 0.01, far: 1000, position: [0, 0, -45] }}>
+    <Canvas camera={{ zoom: 1, fov: 10, near: 0.01, far: 1000, position: [0, 0, -45] }}>
       <RotatingLight />
       <Effects disableGamma>
         <unrealBloomPass threshold={1} strength={3} radius={1} />
