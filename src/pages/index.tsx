@@ -5,6 +5,7 @@ import styles from "@/styles/Home.module.css";
 import TitleScreen from "@/components/TitleScreen";
 import { Moon } from "@/components/three/Moon";
 import { relative } from "path";
+import { CardProcess } from "@/components/CardProcess";
 const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
@@ -25,24 +26,15 @@ export default function Home() {
             paddingLeft={"0"}
             />
         </div>
-        <h2>Bonjour</h2>
-        <h2>Bonjour</h2>
-        <h2>Bonjour</h2>
-        <h2>Bonjour</h2>
-        <h2>Bonjour</h2>
-        <h2>Bonjour</h2>
-        <h2>Bonjour</h2>
-        <h2>Bonjour</h2>
-        <h2>Bonjour</h2>
-        <h2>Bonjour</h2>
-        <h2>Bonjour</h2>
-        <h2>Bonjour</h2>
-        <h2>Bonjour</h2>
-        <h2>Bonjour</h2>
-        <h2>Bonjour</h2>
-        <h2>Bonjour</h2>
-        <h2>Bonjour</h2>
-        <h2>Bonjour</h2>
-       </div>
+        <div>
+            <CardProcess number={"001"} title={""} description={""} positionNumber={"right"} />
+            <CardProcess number={"002"} title={""} description={""} positionNumber={""} />
+            <CardProcess number={"003"} title={""} description={""} positionNumber={"right"} />
+            <CardProcess number={"004"} title={""} description={""} positionNumber={""} />
+            <CardProcess number={"005"} title={""} description={""} positionNumber={"right"} />
+            <CardProcess number={"006"} title={""} description={""} positionNumber={""} />
+        </div>
+        
+    </div>
   );
 }

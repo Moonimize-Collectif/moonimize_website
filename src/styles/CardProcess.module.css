@@ -1,14 +1,13 @@
-.divCardProcess{
-    background: rgba(255, 255, 255, 0.10);
-}
-.pCard , .titleCard, .describCard {
+
+.titleCard, .describCard {
     font-family: ChakraPetch;
 }
 
 .divCardProcess{
     position: relative;
-    background-color: grey;
     padding: 1.5%;
+    background: rgba(255, 255, 255, 0.10);
+    box-shadow: 0 4px 30px rgb(0 0 0 / 10%);
 }
 
 .pCardRight {
@@ -16,6 +15,7 @@
     right: 104%;
     font-size: 50px;
     color: #1ACAD5;
+    font-family: ChakraPetch;
 }
 
 .pCardLeft {
@@ -23,5 +23,6 @@
     left: 104%;
     font-size: 50px;
     color: #1ACAD5;
+    font-family: ChakraPetch;
 }
 
