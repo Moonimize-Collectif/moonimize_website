@@ -7,8 +7,6 @@ import { Moon } from "@/components/three/Moon";
 import { relative } from "path";
 const inter = Inter({ subsets: ["latin"] });
 
-const inter = Inter({subsets: ['latin']})
-
 export default function Home() {
   return (
     <div style={{ position: "relative", top: 0, width: "100%", minHeight: "100vh" }}>
@@ -28,24 +26,6 @@ export default function Home() {
         />
       </div>
       <div style={{ backgroundColor: "#2d2d2d" }}>
-        <h2>Bonjour</h2>
-        <h2>Bonjour</h2>
-        <h2>Bonjour</h2>
-        <h2>Bonjour</h2>
-        <h2>Bonjour</h2>
-        <h2>Bonjour</h2>
-        <h2>Bonjour</h2>
-        <h2>Bonjour</h2>
-        <h2>Bonjour</h2>
-        <h2>Bonjour</h2>
-        <h2>Bonjour</h2>
-        <h2>Bonjour</h2>
-        <h2>Bonjour</h2>
-        <h2>Bonjour</h2>
-        <h2>Bonjour</h2>
-        <h2>Bonjour</h2>
-        <h2>Bonjour</h2>
-        <h2>Bonjour</h2>
       </div>
     </div>
   );

@@ -2,10 +2,17 @@ import React from 'react';
 import styles from '@/styles/MoonimizeButton.module.css';
 import Link from 'next/link';
 
-export const MoonimizeButton = () => {
+
+export const MoonimizeButton = ({icon, iconUrl, redirectUrl} : any) => {
     return (
-        <nav className={styles.moonimizeButton}>
-            <Link href={"/"}>Contactez-nous</Link>
-        </nav>
+
+        <Link href={redirectUrl} className={styles.moonimizeLink}>
+            <button className={styles.moonimizeButton}>Contactez-nous
+            {icon ?
+                    <img className={styles.buttonIcon} src={iconUrl}/>
+                :""}
+            </button>
+        </Link>
+
     );
 }
