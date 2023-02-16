@@ -15,8 +15,8 @@ export default function Home() {
             <TitleScreen
             firstTitle={"MOONIMIZE"}
             secondTitle={"Collectif"}
-            marginTop={"0"}
-            marginBottom={"6%"}
+            marginTop={"20%"}
+            marginBottom={"0%"}
             colorFirstTitle={"white"}
             colorSecondTitle={"#1ACAD5"}
             sizeSecondTitle={"140px"}
