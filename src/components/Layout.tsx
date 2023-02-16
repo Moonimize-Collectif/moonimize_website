@@ -5,6 +5,7 @@ import {ThreeBackground} from '@/components/three/BackgroundThreeJS'
 import { Footer } from '@/components/Footer'
 import styles from '@/styles/Layout.module.css';
 import { BackgroundLine } from '@/components/BackgroundLine'
+import AnimatedElement from "@/components/ServiceCard";
 export default function Layout({ children }: any) {
   return (
 
@@ -19,6 +20,7 @@ export default function Layout({ children }: any) {
       <BackgroundLine></BackgroundLine>
       <Navbar />
       <main style={{position: "relative" ,zIndex: 2, background:"#ffffff00", width:"100%"}}>{children}</main>
+        <AnimatedElement />
       <Footer/>
     </div>
   )
