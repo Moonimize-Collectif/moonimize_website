@@ -35,3 +35,12 @@
     position: relative;
 }
 
+.iconFooter{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 40px;
+    margin-top: 60px;
+
+}
+

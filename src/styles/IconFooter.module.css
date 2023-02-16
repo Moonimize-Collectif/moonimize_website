@@ -1,0 +1,17 @@
+.IconLink {
+    width: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.IconFooter{
+    position: absolute;
+    width: 100%;
+}
+
+.RingIcon{
+    width: 100%;
+    position: absolute;
+}
