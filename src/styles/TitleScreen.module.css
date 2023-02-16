@@ -1,17 +1,17 @@
 .divTitle{
     position: relative;
     width: 100%;
-    z-index: 2;
 }
 .firstTitle {
-    width: 100%;
-    position: absolute; 
-    top: 45%;
     font-family: ChakraPetch;
+    top:-15%;
+    position: relative;
 }
 
 .secondTitle {
     font-family: MilkiWalki;
     font-weight: 500;
+    position: relative;
+    top:15%;
 }
 
