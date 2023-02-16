@@ -2,7 +2,6 @@ import React from 'react';
 import styles from '@/styles/Footer.module.css';
 import { MoonimizeButton } from './MoonimizeButton';
 import { IconFooter } from './IconFooter';
-import Link from 'next/link';
 
 export const Footer = () => {
     return (
@@ -12,10 +11,8 @@ export const Footer = () => {
                 <h1 className={styles.secondTitle} >Let's Talk !</h1>
                 <MoonimizeButton icon={false} iconUrl={""} redirectUrl={'https://www.youtube.com/'}/>
                 <div className={styles.iconFooter}>
-                    <IconFooter iconUrl={"/assets/icon/collectif.svg"} redirectUrl={'https://www.youtube.com/'}/>
-                    <IconFooter iconUrl={"/assets/icon/send-arrow.svg"} redirectUrl={'https://www.youtube.com/'}/>
-                    <IconFooter iconUrl={"/assets/icon/send-arrow.svg"} redirectUrl={'https://www.youtube.com/'}/>
-                    <IconFooter iconUrl={"/assets/icon/send-arrow.svg"} redirectUrl={'https://www.youtube.com/'}/>
+                    <IconFooter iconUrl={"/assets/icon/collectifLogo.svg"} redirectUrl={'https://moonimize.collective.work/'}/>
+                    <IconFooter iconUrl={"/assets/icon/linkdinLogo.svg"} redirectUrl={'https://www.youtube.com/'}/>
                 </div>
             </div>
 

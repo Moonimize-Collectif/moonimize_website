@@ -7,8 +7,8 @@ export const IconFooter = ({iconUrl, redirectUrl} : any) => {
     return (
 
         <Link href={redirectUrl} className={styles.IconLink}>
-            <img className={styles.IconFooter} src={iconUrl}/>
-            <img className={styles.RingIcon} src={"/assets/icon/vector.svg"}/>
+            <img alt={"une icône représentant l'action du bouton associé"} className={styles.IconFooter} src={iconUrl}/>
+            <img alt={"une icône représentant un anneau bleu atour de l'icône"} className={styles.RingIcon} src={"/assets/icon/vector.svg"}/>
         </Link>
     );
 }

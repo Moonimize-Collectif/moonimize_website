@@ -22,7 +22,7 @@
     color: #1ACAD5;
     font-size: 4vh;
     font-weight: 400;
-    font-family: MilkiWalki;
+    font-family: MilkiWalki, serif;
     position: relative;
 }
 
@@ -30,7 +30,7 @@
     margin-bottom: 30px;
     color: white;
     font-size:6vh;
-    font-family: ChakraPetch;
+    font-family: ChakraPetch, serif;
     font-weight: bold;
     position: relative;
 }

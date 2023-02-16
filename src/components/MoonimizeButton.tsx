@@ -9,7 +9,7 @@ export const MoonimizeButton = ({icon, iconUrl, redirectUrl} : any) => {
         <Link href={redirectUrl} className={styles.moonimizeLink}>
             <button className={styles.moonimizeButton}>Contactez-nous
             {icon ?
-                    <img className={styles.buttonIcon} src={iconUrl}/>
+                    <img alt={"une icône représentant l'action du bouton associé"} className={styles.buttonIcon} src={iconUrl}/>
                 :""}
             </button>
         </Link>
