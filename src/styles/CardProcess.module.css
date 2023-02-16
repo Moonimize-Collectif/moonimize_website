@@ -4,7 +4,23 @@
 .pCard , .titleCard, .describCard {
     font-family: ChakraPetch;
 }
-.pCard {
+
+.divCardProcess{
+    position: relative;
+    background-color: grey;
+    padding: 1.5%;
+}
+
+.pCardRight {
+    position: absolute;
+    right: 104%;
+    font-size: 50px;
+    color: #1ACAD5;
+}
+
+.pCardLeft {
+    position: absolute;
+    left: 104%;
     font-size: 50px;
     color: #1ACAD5;
 }
