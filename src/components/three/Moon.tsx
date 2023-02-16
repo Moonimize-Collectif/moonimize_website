@@ -9,7 +9,7 @@ extend({ UnrealBloomPass });
 export const Moon = () => {
   return (
     <Canvas
-      style={{width: "100vw",height: "100%",position: "fixed",top: 0,left: 0,zIndex: -1}}
+      style={{width: "100%",height: "100vh",position: "absolute",top: 0,left: 0,zIndex: -1}}
       camera={{
         zoom: 1,
         fov: 10,

@@ -19,7 +19,7 @@ export default function Layout({ children }: any) {
       <ThreeBackground/>
       <BackgroundLine></BackgroundLine>
       <Navbar />
-      <main style={{position: "relative" ,zIndex: 2, background:"#ffffff00"}}>{children}</main>
+      <main style={{position: "relative" ,zIndex: 2, background:"#ffffff00", width:"100%"}}>{children}</main>
       {/* <Footer /> */}
     </div>
   )
