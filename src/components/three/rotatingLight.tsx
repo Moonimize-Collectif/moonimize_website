@@ -19,7 +19,7 @@ export const Moon = ({ children, refObject, setColor, lightColor,color, ...props
             {...props}
             ref={refObject}
             scale={active ? 3 : 2}
-            onClick={(event) => setColor(!lightColor)}
+            //onClick={(event) => setColor(!lightColor)}
             onPointerOver={(event) => setHover(true)}
             onPointerOut={(event) => setHover(false)}>
             reveiveShadow={true}
