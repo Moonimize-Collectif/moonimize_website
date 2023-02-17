@@ -26,24 +26,6 @@ export default function Home() {
         />
       </div>
       <div style={{ backgroundColor: "#2d2d2d" }}>
-        <h2>Bonjour</h2>
-        <h2>Bonjour</h2>
-        <h2>Bonjour</h2>
-        <h2>Bonjour</h2>
-        <h2>Bonjour</h2>
-        <h2>Bonjour</h2>
-        <h2>Bonjour</h2>
-        <h2>Bonjour</h2>
-        <h2>Bonjour</h2>
-        <h2>Bonjour</h2>
-        <h2>Bonjour</h2>
-        <h2>Bonjour</h2>
-        <h2>Bonjour</h2>
-        <h2>Bonjour</h2>
-        <h2>Bonjour</h2>
-        <h2>Bonjour</h2>
-        <h2>Bonjour</h2>
-        <h2>Bonjour</h2>
       </div>
     </div>
   );

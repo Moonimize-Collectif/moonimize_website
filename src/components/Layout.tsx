@@ -2,8 +2,7 @@
 import { Navbar } from './Navbar';
 import Head from 'next/head'
 import {ThreeBackground} from '@/components/three/BackgroundThreeJS'
-
-// import Footer from './footer'
+import { Footer } from '@/components/Footer'
 import styles from '@/styles/Layout.module.css';
 import { BackgroundLine } from '@/components/BackgroundLine'
 export default function Layout({ children }: any) {
@@ -20,7 +19,7 @@ export default function Layout({ children }: any) {
       <BackgroundLine></BackgroundLine>
       <Navbar />
       <main style={{position: "relative" ,zIndex: 2, background:"#ffffff00", width:"100%"}}>{children}</main>
-      {/* <Footer /> */}
+      <Footer/>
     </div>
   )
 }
