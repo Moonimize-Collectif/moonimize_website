@@ -24,7 +24,7 @@ const Members = ({members}) => {
       <div className={styles.membersContainer}>
         {members.map((member, index) => {
           
-          return (<MemberCard key={member._id} reverse={index%2!==0} marginTop={index === 0 ? "0px" : "32px"} devName={`${member.firstname} ${member.lastname}`} />);
+          return (<MemberCard key={member._id} reverse={index%2!==0} marginTop={index === 0 ? "0px" : "32px"} devName={`${member.firstname} ${member.lastname}`} devJob={member.job} devDesc={member.description} />);
         })}
         {/* <MemberCard reverse={true} marginTop="32px" /> */}
       </div>

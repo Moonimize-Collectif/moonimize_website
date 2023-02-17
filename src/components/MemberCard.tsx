@@ -7,10 +7,8 @@ const MemberCard = ({reverse = false, marginTop, devName, devJob, devDesc, devPi
     <div className={styles.cardContainer} style={{marginTop}}>
         <div className={styles.cardInfosSectionReverse}>
             <h3 className={styles.devName}>{devName}</h3>
-            <h4 className={styles.devJob}>Developer Web & Mobile</h4>
-            <p className={styles.devDesc}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem quaerat quibusdam vel cum explicabo a accusamus, asperiores maiores reiciendis ipsam! Officia eum eos magni ducimus. Esse beatae iste laboriosam odio.
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea a natus velit neque nihil est ex nemo quasi repellendus pariatur voluptatum deserunt labore molestiae accusantium, cupiditate autem reprehenderit. Numquam, pariatur.
-            </p>
+            <h4 className={styles.devJob}>{devJob}</h4>
+            <p className={styles.devDesc}>{devDesc}</p>
         </div>
         <div className={styles.cardPicSectionReverse}>
             <div className={styles.memberPicReverse}></div>
@@ -23,10 +21,8 @@ const MemberCard = ({reverse = false, marginTop, devName, devJob, devDesc, devPi
         </div>
         <div className={styles.cardInfosSection}>
             <h3 className={styles.devName}>{devName}</h3>
-            <h4 className={styles.devJob}>Developer Web & Mobile</h4>
-            <p className={styles.devDesc}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem quaerat quibusdam vel cum explicabo a accusamus, asperiores maiores reiciendis ipsam! Officia eum eos magni ducimus. Esse beatae iste laboriosam odio.
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea a natus velit neque nihil est ex nemo quasi repellendus pariatur voluptatum deserunt labore molestiae accusantium, cupiditate autem reprehenderit. Numquam, pariatur.
-            </p>
+            <h4 className={styles.devJob}>{devJob}</h4>
+            <p className={styles.devDesc}>{devDesc}</p>
         </div>
     </div>
   )

@@ -18,12 +18,12 @@
 }
 
 .memberPic {
-  background: url(http://placekitten.com/500/500);
+  background: url(http://placekitten.com/400/400);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   position:absolute;
-  width: 100%;
+  width: 101%;
   top:0px;
   left:50px;
   right:0px;
@@ -54,10 +54,10 @@
  display : inline-block;
  height : 0;
  width : 0;
- border-left : 90px solid transparent;
+ border-left : 105px solid transparent;
  border-bottom : 290px solid rgba(255, 255, 255, 0.10);
  top: 0;
- left: -90px;
+ left: -104.5px;
  position: absolute;
  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
  backdrop-filter: blur(5px);
@@ -96,14 +96,14 @@
 }
 
 .memberPicReverse {
-  background: url(http://placekitten.com/500/500);
+  background: url(http://placekitten.com/600/600);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   position:absolute;
-  width: 100%;
+  width: 101%;
   top:0px;
-  left:-50px;
+  left:-52px;
   right:0px;
   bottom:0px;
   -webkit-transform: skew(-20deg);
@@ -132,10 +132,10 @@
  display : inline-block;
  height : 0;
  width : 0;
- border-right : 90px solid transparent;
+ border-right : 105px solid transparent;
  border-bottom : 290px solid rgba(255, 255, 255, 0.10);
  top: 0;
- right: -90px;
+ right: -104.5px;
  position: absolute;
  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
  backdrop-filter: blur(5px);
