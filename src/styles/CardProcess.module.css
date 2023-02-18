@@ -3,26 +3,118 @@
     font-family: ChakraPetch;
 }
 
+.titleCard{
+    font-size: 34px;
+    color: white;
+    font-family: ChakraPetch;
+    line-height: 44px;
+}
+.divCardProcessLeft{
+    position: relative;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    width: 66%;
+    padding: 1%;
+    margin: 0 auto;
+    background: radial-gradient(97.57% 210.75% at 0.9% 2.98%, rgba(255, 255, 255, 0.4) 0%, rgba(255, 255, 255, 0.150833) 0.01%, rgba(255, 255, 255, 0.0113137) 95.62%, rgba(255, 255, 255, 0) 100%);
+    backdrop-filter: blur(10px);
+    border-radius: 4px;
+}
 .divCardProcess{
     position: relative;
-    padding: 1.5%;
-    background: rgba(255, 255, 255, 0.10);
-    box-shadow: 0 4px 30px rgb(0 0 0 / 10%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 66%;
+    margin: 0 auto;
+    padding: 1%;
+    background: radial-gradient(97.57% 210.75% at 0.9% 2.98%, rgba(255, 255, 255, 0.4) 0%, rgba(255, 255, 255, 0.150833) 0.01%, rgba(255, 255, 255, 0.0113137) 95.62%, rgba(255, 255, 255, 0) 100%);
+    backdrop-filter: blur(10px);
+    border-radius: 4px;
 }
 
 .pCardRight {
-    position: absolute;
-    right: 104%;
-    font-size: 50px;
+    position: relative;
+    right: 10%;
+    width: 1%;
+    font-size: 80px;
     color: #1ACAD5;
     font-family: ChakraPetch;
 }
 
 .pCardLeft {
-    position: absolute;
-    left: 104%;
-    font-size: 50px;
+    position: relative;
+    font-size: 80px;
+    width: 1%;
+    left: -4%;
     color: #1ACAD5;
     font-family: ChakraPetch;
 }
 
+.describCard{
+    font-size: 24px;
+    font-family: ChakraPetch;
+    color: rgba(255, 255, 255, 0.6);
+    line-height: 31px;
+    text-align: justify;
+}
+@media screen and (max-width: 321px) {
+    .pCardRight, .pCardLeft {
+        display: none;
+    }
+}
+@media screen and (max-width: 634px) {
+    .divCardProcessLeft, .divCardProcess {
+        width: 90%;
+        margin: 3% auto;
+    }
+    .pCardRight, .pCardLeft {
+        font-size: 36px;
+    }
+    .pCardRight {
+        right: 4%;
+    }
+    .pCardLeft {
+        left: -12%;
+    }
+}
+@media screen and (min-width: 635px) and (max-width: 721px) {
+    .divCardProcessLeft, .divCardProcess {
+        width: 80%;
+    }
+    .pCardRight, .pCardLeft {
+        font-size: 55px;
+    }
+
+    .pCardLeft {
+        left: -9%;
+    }
+}
+@media screen and (min-width: 722px) and (max-width: 808px) {
+    .divCardProcessLeft, .divCardProcess {
+        width: 80%;
+        margin: 1% auto;
+    }
+    .pCardRight, .pCardLeft {
+        font-size: 60px;
+    }
+    .pCardLeft {
+        left: -9%;
+    }
+    .pCardRight {
+        right: 8%;
+    }
+}
+@media screen and (min-width: 809px) and (max-width: 918px) { 
+    .divCardProcessLeft,  .divCardProcess{ 
+        width: 80%;
+    }
+    .pCardRight {    
+        right: 13%;
+    }
+    .pCardLeft{
+        left: -11%;
+    }
+}

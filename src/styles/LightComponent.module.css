@@ -1,0 +1,15 @@
+.lightLeft {
+    height: 3vh;
+    width:0.5%;
+    margin-left:32.95%;
+    background: #1ACAD5;
+    box-shadow: 0px 0px 10px 3px #1ACAD5;
+}
+
+.lightRight {
+    height: 3vh;
+    width: 0.5%;
+    margin-left: 66.55%;
+    background: #1ACAD5;
+    box-shadow: 0px 0px 10px 3px #1ACAD5;
+}

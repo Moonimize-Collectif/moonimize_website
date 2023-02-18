@@ -4,7 +4,7 @@ import globalStyle from '../styles/globals.css'
 
 // Component allowing to display an adaptable title and subtitle with an adaptable top and bottom margin, titile's color,
 // size and font.
-export default function Title_screen({firstTitle, secondTitle, marginTop, marginBottom, colorFirstTitle, colorSecondTitle, sizeSecondTitle, sizeFirstTitle, textAlign, paddingLeft} :any) {
+export default function Title_screen({firstTitle, secondTitle, display,marginTop, marginBottom, colorFirstTitle, colorSecondTitle, sizeSecondTitle, sizeFirstTitle, textAlign, paddingLeft} :any) {
     return (
     // <div className={styles.divTitle} style={{display: "flex",marginTop: marginTop , marginBottom: marginBottom, textAlign: textAlign, paddingLeft: paddingLeft}}>
  
