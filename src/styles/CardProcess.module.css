@@ -68,7 +68,6 @@
 @media screen and (max-width: 634px) {
     .divCardProcessLeft, .divCardProcess {
         width: 90%;
-        margin: 3% auto;
     }
     .pCardRight, .pCardLeft {
         font-size: 36px;
@@ -95,7 +94,6 @@
 @media screen and (min-width: 722px) and (max-width: 808px) {
     .divCardProcessLeft, .divCardProcess {
         width: 80%;
-        margin: 1% auto;
     }
     .pCardRight, .pCardLeft {
         font-size: 60px;
