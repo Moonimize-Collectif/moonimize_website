@@ -8,12 +8,18 @@ import { LightComponent } from "@/components/LightComponent";
 import { Moon } from "@/components/three/Moon";
 import { relative } from "path";
 const inter = Inter({ subsets: ["latin"] });
+import useScreenSize from "../hooks/useScreenSize";
 
 export default function Home() {
+    const screenWidth = useScreenSize().width;
+
   return (
     <div style={{ position: "relative", top: 0, width: "100%", minHeight: "100vh" }}>
       <Moon />
       <div style={{ display: "flex", height: "100vh", justifyContent: "center", alignItems: "center", flexDirection: "column" }}>
+        {screenWidth > 670 ?
+
+        
         <TitleScreen
           firstTitle={"MOONIMIZE"}
           secondTitle={"Collectif"}
@@ -27,6 +33,21 @@ export default function Home() {
           textAlign={"center"}
           paddingLeft={"0"}
         />
+        :
+        <TitleScreen
+          firstTitle={"MOONIMIZE"}
+          secondTitle={"Collectif"}
+          display={"flex"}
+          marginTop={"0%"}
+          marginBottom={"0%"}
+          colorFirstTitle={"white"}
+          colorSecondTitle={"#1ACAD5"}
+          sizeSecondTitle={"110px"}
+          sizeFirstTitle={"88px"}
+          textAlign={"center"}
+          paddingLeft={"0"}
+          />
+        }
       </div>
       <div style={{ backgroundColor: "#2d2d2d", display: "flex", height: "200vh", flexDirection: "column" }}>
         <TitleScreen  firstTitle={"PROCESS"}
