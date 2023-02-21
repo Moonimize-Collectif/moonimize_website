@@ -277,3 +277,13 @@
     transform: rotate(0deg);
   }
 }
+
+.divProcess {
+    height: 140vh;
+}
+
+@media screen and (max-width: 800px) {
+    .divProcess {
+        height: 300vh;
+    }
+}

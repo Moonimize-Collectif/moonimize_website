@@ -8,19 +8,27 @@ import { LightComponent } from "@/components/LightComponent";
 import { Moon } from "@/components/three/Moon";
 import { relative } from "path";
 const inter = Inter({ subsets: ["latin"] });
+// hook size screen
 import useScreenSize from "../hooks/useScreenSize";
+import { useState } from "react";
 
 export default function Home() {
     const screenWidth = useScreenSize().width;
+    // const [firstSize, setFirstSize] = useState("0px")
+    // if (screenWidth > 670){
+    //     setFirstSize("110px")
+    // }else {
+    //     setFirstSize("88px")
+    // }
 
   return (
     <div style={{ position: "relative", top: 0, width: "100%", minHeight: "100vh" }}>
       <Moon />
       <div style={{ display: "flex", height: "100vh", justifyContent: "center", alignItems: "center", flexDirection: "column" }}>
-        {screenWidth > 670 ?
+        {/* {screenWidth > 670 ? */}
 
         
-        <TitleScreen
+        {/* <TitleScreen
           firstTitle={"MOONIMIZE"}
           secondTitle={"Collectif"}
           display={"flex"}
@@ -29,11 +37,11 @@ export default function Home() {
           colorFirstTitle={"white"}
           colorSecondTitle={"#1ACAD5"}
           sizeSecondTitle={"140px"}
-          sizeFirstTitle={"120px"}
+          sizeFirstTitle={firstSize}
           textAlign={"center"}
           paddingLeft={"0"}
-        />
-        :
+        /> */}
+        {/* :
         <TitleScreen
           firstTitle={"MOONIMIZE"}
           secondTitle={"Collectif"}
@@ -47,9 +55,9 @@ export default function Home() {
           textAlign={"center"}
           paddingLeft={"0"}
           />
-        }
+        } */}
       </div>
-      <div style={{ backgroundColor: "#2d2d2d", display: "flex", height: "200vh", flexDirection: "column" }}>
+      <div className={styles.divProcess} style={{ backgroundColor: "#2d2d2d", display: "flex", height: "140vh", flexDirection: "column" }}>
         <TitleScreen  firstTitle={"PROCESS"}
           secondTitle={"Comment ça marche ?"}
           display={"block"}
