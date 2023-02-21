@@ -278,12 +278,13 @@
   }
 }
 
-.divProcess {
+/* .divProcess {
     height: 140vh;
-}
+} */
 
-@media screen and (max-width: 800px) {
+/* @media screen and (max-width: 800px) {
     .divProcess {
         height: 300vh;
+        background-color: red;
     }
-}
+} */
