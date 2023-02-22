@@ -1,6 +1,7 @@
 import Head from "next/head";
 import styles from "@/styles/Members.module.css";
-import PageTitle from "@/components/PageTitle";
+// import PageTitle from "@/components/PageTitle";
+import TitleScreen from "@/components/TitleScreen";
 import MemberCard from "@/components/MemberCard";
 import { fetchWrapper } from "@/utils/fetchWrapper";
 
@@ -10,16 +11,19 @@ const Members = ({members}) => {
   
   return (
     <div className="page">
-      <div className={styles.pageTitleContainer}>
-        <PageTitle
-            mainTitle={"L'ÉQUIPAGE"}
-            subTitle={"Dream Team"}
-            sizeMainTitle="100px"
-            sizeSubTitle="80px"
-            colorSubTitle="#1ACAD5"
-            textAlign="center"
-            marginTop="-56px"
-        />
+      <div className={styles.pageTitleContainer} style={{height: "20vh"}}>
+            <TitleScreen
+                firstTitle={"L'ÉQUIPAGE"}
+                secondTitle={"Dream Team"}
+                marginTop={"0%"}
+                marginBottom={"0%"}
+                colorFirstTitle={"white"}
+                colorSecondTitle={"#1ACAD5"}
+                sizeSecondTitle={"100px"}
+                sizeFirstTitle={"80px"}
+                textAlign={"center"}
+                paddingLeft={"0"}
+            />
       </div>
       <div className={styles.membersContainer}>
         {members.map((member, index) => {
