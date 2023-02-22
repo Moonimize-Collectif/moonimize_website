@@ -5,6 +5,7 @@ import { ContactForm } from "@/components/ContactForm";
 import useScreenSize from "../hooks/useScreenSize";
 import { useEffect, useState } from "react";
 
+
 const Contact = ({}) => {  
     const screenWidth = useScreenSize().width;
     const [firstTitleSize, setFirstTitleSize] = useState("0px")
