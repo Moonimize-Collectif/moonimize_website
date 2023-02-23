@@ -46,7 +46,7 @@ export default function Home() {
           paddingLeft={"0"}
         />
       </div>
-        <div className={styles.divProcess} style={{ backgroundColor: "#2d2d2d", paddingBottom: "3%"}}>
+        <div className={styles.divProcess}>
             <div style={{display: "flex", flexDirection: "column" ,height: "20vh"  }}>
                 <TitleScreen  firstTitle={"PROCESS"}
                 secondTitle={"Comment ça marche ?"}
