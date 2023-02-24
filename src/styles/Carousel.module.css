@@ -1,0 +1,86 @@
+.carousel {
+    overflow: hidden;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+.carouselItem > img {
+    width: 100%;
+    object-fit: cover;
+    height: 100%;
+}
+
+.inner {
+    width: 100%;
+    white-space: nowrap;
+    transition: transform 0.5s ease;
+}
+
+.carouselItem {
+    display: inline-flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    height: 510px;
+    background-color: green;
+    color: #fff;
+}
+
+.indicators {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.itemPoint {
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    border: none;
+    background-color: #161827;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.itemPoint:active {
+    width: 28px;
+    height: 28px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    background-color: #161827;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.itemPoint:focus {
+    width: 28px;
+    height: 28px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    background-color: #161827;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+
+.prev, .next {
+    background-color: #00000000;
+    border: none;
+    font-size: 40px;
+    font-family: ChakraPetch, serif;
+    font-weight: 400;
+}
+
+.prev:active, .next:active{
+    background-color: #00000000;
+    border: none;
+    font-size: 30px;
+    font-family: ChakraPetch, serif;
+    font-weight: bold;
+}
