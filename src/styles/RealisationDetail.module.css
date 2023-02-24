@@ -35,7 +35,7 @@
     font-weight: 400;
     color: hsla(0, 0%, 100%, 0.7);
     overflow-y: hidden;
-    transition: max-height 1s ease-in;
+    transition: max-height 2s ease-in-out;
     white-space: pre-wrap;
 }
 
@@ -53,14 +53,23 @@
 }
 
 .categoryContainer {
-    padding: 5px;
+    padding: 8px;
     border: white solid 1px;
-    border-radius: 10px;
+    border-radius: 4px;
+    transition: 0.5s ease;
+}
+
+.categoryContainer:hover {
+    padding: 8px;
+    border: white solid 1px;
+    border-radius: 4px;
+    background-color: white;
+    color: black;
 }
 
 .categoryContainer p {
     font-family: ChakraPetch, serif;
-    font-size: 15px;
+    font-size: 22px;
     font-weight: 400;
 }
 
