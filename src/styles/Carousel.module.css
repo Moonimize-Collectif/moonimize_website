@@ -11,7 +11,7 @@
 
 .carouselItem > img {
     width: 100%;
-    object-fit: cover;
+    object-fit: contain;
     height: 100%;
 }
 
@@ -27,7 +27,7 @@
     align-items: center;
     justify-content: center;
     height: 510px;
-    background-color: green;
+    background-color: transparent;
     color: #fff;
 }
 
@@ -44,6 +44,17 @@
     border-radius: 50%;
     border: none;
     background-color: #161827;
+    margin: 0 5px;
+    cursor: pointer;
+    transition: 2s ease;
+}
+
+.itemPoint:hover {
+    width: 28px;
+    height: 28px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.80);
     margin: 0 5px;
     cursor: pointer;
 }
@@ -67,7 +78,6 @@
     margin: 0 5px;
     cursor: pointer;
 }
-
 
 .prev, .next {
     background-color: #00000000;
