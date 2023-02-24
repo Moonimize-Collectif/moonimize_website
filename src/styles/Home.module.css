@@ -277,3 +277,19 @@
     transform: rotate(0deg);
   }
 }
+
+
+.divProcess {
+  background: linear-gradient(0deg,#2d2d2d,70%, #2d2d2d00);
+  padding-bottom: 3%;
+}
+/* .divProcess {
+    height: 140vh;
+} */
+
+/* @media screen and (max-width: 800px) {
+    .divProcess {
+        height: 300vh;
+        background-color: red;
+    }
+} */
