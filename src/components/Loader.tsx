@@ -12,23 +12,25 @@ const Loader = () => {
     }, []);
 
     return (
-        <div className={styles.moonOrbitLoader}>
-            <div className={styles.planet} />
-            <svg width="150" height="150">
-                <circle
-                    cx="75"
-                    cy="75"
-                    r="58"
-                    fill="none"
-                    stroke="#ffffffaa"
-                    strokeWidth="2"
-                />
-            </svg>
-            <div className={styles.moonContainer}>
-                <div
-                    className={styles.moon}
-                    style={{ transform: `rotate(${moonPosition}deg)` }}
-                />
+        <div style={{width:"100vw", height:"100vh", display:"flex", justifyContent:"center", alignItems:"center"}}>
+            <div className={styles.moonOrbitLoader}>
+                <div className={styles.planet} />
+                <svg width="150" height="150">
+                    <circle
+                        cx="75"
+                        cy="75"
+                        r="58"
+                        fill="none"
+                        stroke="#ffffffaa"
+                        strokeWidth="2"
+                    />
+                </svg>
+                <div className={styles.moonContainer}>
+                    <div
+                        className={styles.moon}
+                        style={{ transform: `rotate(${moonPosition}deg)` }}
+                    />
+                </div>
             </div>
         </div>
     );
