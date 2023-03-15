@@ -44,7 +44,7 @@ export const getStaticPaths: GetStaticPaths<{ slug: string }> = async () => {
 
 export async function getStaticProps({ params } : any) {
     let projectId = params.id
-    const getProject = await fetchWrapper.get(`project/${projectId}`);
+    const getProject = await fetchWrapper.get(`projects/${projectId}`);
     const project = await getProject.data;
 
     return {
