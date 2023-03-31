@@ -1,29 +1,61 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
+import globalStyle from '../styles/globals.css'
+import styles from '@/styles/ProjectComponent.module.css'
+import Link from 'next/link';
 
-const ProjectComponent = ({id, name, logo, description, categories}) => {
-     console.log(categories)
+const ProjectComponent = ({id, name, logo, description, categories, technology} : any) => {
+
+    const [category , setCategory ] = useState('')
+
+    useEffect(() => {
+        var category = ""
+        for (let i = 0 ; i < categories.length ; i++){
+            if (i == 0) {
+                category = categories[i].name
+            }
+            else { 
+                category = category + " & " + categories[i].name
+            }
+            setCategory(category)  
+        }
+    })
+
+    if (id == undefined){
+        <div>
+            <p>Auncunes realisations.</p>
+        </div>
+    }
     if (id%2 == 0) {
         return  (
-            <div>
-                <img src={logo} alt="Logo" />
-                <h1 style={{"color":"white"}}>{name}</h1>
-                <h2 style={{"color":"white"}}>Sous titre</h2>
-                <p style={{"color":"white"}}>{description}</p>
-            </div>
+            <Link className={styles.container} href={""}>
+                <div className={styles.divLogo}>
+                    <img className={styles.logoImg} src={logo} alt={"Logo de "+name}/>
+                </div>
+                <div className={styles.divProjet}>
+                    <h1>{name}</h1>
+                    <h2>{category}</h2>
+                    <p>{description}</p>
+                    <img src={technology} alt={"Logo de "+name}/>
+                </div>   
+            </Link>
         )
     }
     else {
         return  (
-            <div>
-                <h1 style={{"color":"white"}}>{name}</h1>
-                <h2 style={{"color":"white"}}>Sous titre</h2>
-                <p style={{"color":"white"}}>{description}</p>
-                <img src={logo} alt="Logo" />
-            </div>
+            <Link href={""} className={styles.container}>
+                <div>
+                    <h1>{name}</h1>
+                    <h2>{category}</h2>
+                    <p>{description}</p>
+                    <img className={styles.techImg} src={technology} alt={"Logo de "+name}/>
+                </div>
+                <div className={styles.divLogo}>
+                    <img className={styles.logoImg} src={logo} alt={"Logo de "+name} />
+                </div>
+            
+            </Link>
         )
     }
-    
-
 }
 
 export default ProjectComponent

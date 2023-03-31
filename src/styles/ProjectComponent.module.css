@@ -1,0 +1,64 @@
+.container {
+    display: flex;
+    width: 80%;
+    margin: auto ;
+    margin-bottom: 2%;
+    background: radial-gradient(97.57% 210.75% at 0.9% 2.98%, rgba(255, 255, 255, 0.4) 0%, rgba(255, 255, 255, 0.150833) 0.01%, rgba(255, 255, 255, 0.0113137) 95.62%, rgba(255, 255, 255, 0) 100%);
+    backdrop-filter: blur(10px);
+    border-radius: 0px 4px 4px 0px;
+}
+
+.divLogo {
+    width: 20%;
+}
+.divProjet {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 3%;
+}
+
+.divProjetRight {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-right: 3%;
+}
+
+.logoImg {
+    width: 100%;
+}
+
+
+.container h1, .container p {
+    color: white;
+}
+
+.container h1 {
+    font-family: 'Chakra Petch';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 34px;
+}
+
+.container h2 {
+    color: #1ACAD5;
+    padding-bottom: 3%;
+}
+
+.container p {
+    width: 93%;
+    font-family: 'Chakra Petch';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 31px;
+    text-align: justify;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.techImg{
+    width: 50%;
+}

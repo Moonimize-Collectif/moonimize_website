@@ -9,7 +9,8 @@ const Projects =  ({projects}) => {
 
    
 
-    // console.log(projects)
+    console.log(projects)
+
 
     const screenWidth = useScreenSize().width;
     const [firstTitleSize, setFirstTitleSize] = useState("0px")
@@ -42,16 +43,14 @@ const Projects =  ({projects}) => {
                 paddingLeft={"0"}
                 />
             </div>
-            {projects.map((project, key) => (  
-                
-                
-           
-
-                <ProjectComponent id={key} name={project.name} logo={project.logo} description={project.description} categories={project.categories}/>
-            
-    
-                
-            ))}
+            {projects.length == 0 
+                ? 
+                <p style={{"color": "white", "textAlign": "center", "fontFamily": "ChakraPetch", "fontSize": "30px", "paddingBottom": "7%"}}>Aucunes réalisations</p> 
+                : 
+                projects.map((project, key) => (  
+                    <ProjectComponent id={key} name={project.name} logo={project.logo} description={project.summary} categories={project.categories} technology={project.technologies}/>  
+                ))
+            }
             
             
            
