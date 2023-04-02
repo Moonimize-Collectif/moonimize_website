@@ -35,7 +35,7 @@ const ProjectComponent = ({id, name, logo, description, categories, technology} 
                     <h1>{name}</h1>
                     <h2>{category}</h2>
                     <p>{description}</p>
-                    <img src={technology} alt={"Logo de "+name}/>
+                    <img className={styles.techImg} src={technology} alt={"Logo de "+name}/>
                 </div>   
             </Link>
         )
@@ -43,7 +43,7 @@ const ProjectComponent = ({id, name, logo, description, categories, technology} 
     else {
         return  (
             <Link href={""} className={styles.container}>
-                <div>
+                <div className={styles.divProjet}>
                     <h1>{name}</h1>
                     <h2>{category}</h2>
                     <p>{description}</p>

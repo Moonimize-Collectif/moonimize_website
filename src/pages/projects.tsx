@@ -4,6 +4,7 @@ import useScreenSize from "../hooks/useScreenSize";
 import { useEffect, useState } from "react";
 import ProjectComponent from "@/components/ProjectComponent";
 import { fetchWrapper } from "@/utils/fetchWrapper";
+import styles from '@/styles/ProjectComponent.module.css';
 
 const Projects =  ({projects}) => { 
 
@@ -18,17 +19,17 @@ const Projects =  ({projects}) => {
 
     useEffect(() => {
         if (screenWidth > 670){
-            setFirstTitleSize("110px")
-            setSecondTitleSize("140px")
+            setFirstTitleSize("80px")
+            setSecondTitleSize("100px")
         }else {
-            setFirstTitleSize("88px")
-            setSecondTitleSize("110px")
+            setFirstTitleSize("45px")
+            setSecondTitleSize("60px")
         }    
     });
 
     return (
-        <div>
-            <div style={{ display: "flex", height: "70vh", justifyContent: "center", alignItems: "center", flexDirection: "column" }}>
+        <div className={styles.page}>
+            <div className={styles.divContainer} style={{ display: "flex", height: "20vh", justifyContent: "center", alignItems: "center", flexDirection: "column", marginBottom: "20px",marginTop:"20px" }}>
                 <TitleScreen
                 firstTitle={"REALISATIONS"}
                 secondTitle={"Nos étoiles"}
@@ -43,6 +44,7 @@ const Projects =  ({projects}) => {
                 paddingLeft={"0"}
                 />
             </div>
+            
             {projects.length == 0 
                 ? 
                 <p style={{"color": "white", "textAlign": "center", "fontFamily": "ChakraPetch", "fontSize": "30px", "paddingBottom": "7%"}}>Aucunes réalisations</p> 
@@ -61,7 +63,7 @@ const Projects =  ({projects}) => {
 }
 
 export async function getStaticProps(context) {
-    const getProjects = await fetchWrapper.get(`project`);
+    const getProjects = await fetchWrapper.get(`Projects`);
     const projects = await getProjects.data;
   
     return {
