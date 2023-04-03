@@ -21,9 +21,15 @@ const Projects =  ({projects}) => {
         if (screenWidth > 670){
             setFirstTitleSize("80px")
             setSecondTitleSize("100px")
-        }else {
+        }
+        else if (screenWidth >= 320 && screenWidth <= 375){
             setFirstTitleSize("45px")
-            setSecondTitleSize("60px")
+            setSecondTitleSize("65px")
+        }
+        
+        else {
+            setFirstTitleSize("55px")
+            setSecondTitleSize("75px")
         }    
     });
 
