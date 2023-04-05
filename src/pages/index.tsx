@@ -78,8 +78,22 @@ export default function Home() {
 
       </div>
       <div style={{ display: "flex", flexDirection: "column", height: "auto", paddingLeft: "4em", paddingRight: "4em", paddingTop: "50px", paddingBottom: "50px" }}>
-        <MoonimizeContainerProject/>
+          <div style={{ display: "flex", flexDirection: "column", height: "20vh" }}>
+            <TitleScreen firstTitle={"RÉALISATION"}
+              secondTitle={"Nos étoiles"}
+              display={"block"}
+              marginTop={"0%"}
+              marginBottom={"0%"}
+              colorFirstTitle={"white"}
+              colorSecondTitle={"#1ACAD5"}
+              sizeSecondTitle={"46px"}
+              sizeFirstTitle={"44px"}
+              textAlign={""}
+              paddingLeft={"8%"}
+            />
+          </div>
+          <MoonimizeContainerProject />
+        </div>
       </div>
-    </div>
-  );
+      );
 }

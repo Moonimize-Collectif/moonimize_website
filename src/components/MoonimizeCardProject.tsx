@@ -2,32 +2,46 @@ import React, { useEffect, useState } from 'react'
 import styles from '@/styles/MoonimizeCardProject.module.css';
 import { fetchWrapper } from '@/utils/fetchWrapper';
 
-const projects = [
+const listProjects = [
     {
-      title: "Project 1",
-      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nisl vel tincidunt lacinia, nunc est ultricies nunc, ut aliquam massa nisl quis nunc. Sed euismod, nisl vel tincidunt lacinia, nunc est ultricies nunc, ut aliquam massa nisl quis nunc.",
-      image: "https://logos-marques.com/wp-content/uploads/2021/03/Twitter-logo.png",
-      url:"test"
+        name: "Happer",
+        summary: "Creation d'une application mobile pour la marque Woman et Luxury. Cette application permets de proposer des vetenements de createurs sur un reseau social dédié a la mode. ",
+        logo: "http://drive.google.com/uc?export=view&id=1oeY_UKiZPPMC6IbJI-L_Zttyd1KsRQAK",
+        url: "test"
     },
     {
-      title: "Project 2",
-      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nisl vel tincidunt lacinia, nunc est ultricies nunc, ut aliquam massa nisl quis nunc. Sed euismod, nisl vel tincidunt lacinia, nunc est ultricies nunc, ut aliquam massa nisl quis nunc.",
-      image: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/Facebook_logo_%28square%29.png/800px-Facebook_logo_%28square%29.png",
-      url: "test"
+        name: "Happer",
+        summary: "Creation d'une application mobile pour la marque Woman et Luxury. Cette application permets de proposer des vetenements de createurs sur un reseau social dédié a la mode. ",
+        logo: "http://drive.google.com/uc?export=view&id=1oeY_UKiZPPMC6IbJI-L_Zttyd1KsRQAK",
+        url: "test"
     },
     {
-      title: "Project 3",
-      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nisl vel tincidunt lacinia, nunc est ultricies nunc, ut aliquam massa nisl quis nunc. Sed euismod, nisl vel tincidunt lacinia, nunc est ultricies nunc, ut aliquam massa nisl quis nunc.",
-      image: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/2048px-Instagram_icon.png",
-      url: "test"
+        name: "Happer",
+        summary: "Creation d'une application mobile pour la marque Woman et Luxury. Cette application permets de proposer des vetenements de createurs sur un reseau social dédié a la mode. ",
+        logo: "http://drive.google.com/uc?export=view&id=1oeY_UKiZPPMC6IbJI-L_Zttyd1KsRQAK",
+        url: "test"
     },
-  ]
+    {
+        name: "Happer",
+        summary: "Creation d'une application mobile pour la marque Woman et Luxury. Cette application permets de proposer des vetenements de createurs sur un reseau social dédié a la mode. ",
+        logo: "http://drive.google.com/uc?export=view&id=1oeY_UKiZPPMC6IbJI-L_Zttyd1KsRQAK",
+        url: "test"
+    },
+    {
+        name: "Happer",
+        summary: "Creation d'une application mobile pour la marque Woman et Luxury. Cette application permets de proposer des vetenements de createurs sur un reseau social dédié a la mode. ",
+        logo: "http://drive.google.com/uc?export=view&id=1oeY_UKiZPPMC6IbJI-L_Zttyd1KsRQAK",
+        url: "test"
+    },
+
+    
+]
 
 export const MoonimizeContainerProject = ({ title, description, image }: any) => {
-    const [projects, setProjects] = useState([]);
+    const [projects, setProjects] = useState(listProjects);
 
     useEffect(() => {
-        const fetchData = async () => {
+        /*const fetchData = async () => {
             const getProjects = await fetchWrapper.get(`projects`);
             const projectsAPI = await getProjects.data;
             console.log(projectsAPI)
@@ -35,14 +49,15 @@ export const MoonimizeContainerProject = ({ title, description, image }: any) =>
         }
         
           // call the function
-        fetchData().catch(console.error);
-       
+        fetchData().catch(console.error);*/
+        //setProjects(projects)
     }, [])
+
     return (
-        <div style={{ display: "flex", flexDirection: "row", height: "auto", justifyContent: "space-between", alignItems: "center" }}>
+        <div style={{ display: "flex", flexDirection: "row", height: "auto", width:"100%",justifyContent: "center", alignItems: "center", flexWrap: "wrap" }}>
             {
                 projects ? projects.map((project, index) => {
-                    return <MoonimizeCardProject key={index} title={project.title} description={project.description} image={project.image} />
+                    return <MoonimizeCardProject key={index} title={project.name} description={project.summary} image={project.logo} />
                 }) : null
             }
         </div>

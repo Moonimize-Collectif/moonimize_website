@@ -1,12 +1,17 @@
 .card {
      position: relative;
+     flex: 1 0 33%;
+     min-width: 300px;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
 }
 
 .card .face {
      width: 90%;
      height: 200px;
      transition: .4s;
-     border-radius: 4px;
 }
 
 .card .face.face1 {
@@ -46,10 +51,10 @@
 }
 
 .icon {
-     width: 3em;
+     width: 5em;
      color: white;
      display: inline-block;
-     opacity: 0.3;
+     opacity: 0.8;
      filter: grayscale(1);
 }
 
@@ -60,7 +65,7 @@
 }
 
 .card .face.face1 .content h3 {
-     font-size: 1em;
+     font-size: 2em;
      color: white;
      text-align: center;
 }

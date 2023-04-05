@@ -19,7 +19,7 @@ function get(url, retry = true, router = null) {
     const requestOptions = {
         method: 'GET',
         headers,
-        credentials: 'include',
+        //credentials: 'include',
     };
 
     return fetch(
