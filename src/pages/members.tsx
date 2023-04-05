@@ -38,8 +38,8 @@ const Members = ({members}) => {
 
 export async function getStaticProps(context) {
   const getMembers = await fetchWrapper.get(`administrators/members`);
+  console.log(getMembers);
   const members = await getMembers.data;
-
   return {
       props: {
           members,
