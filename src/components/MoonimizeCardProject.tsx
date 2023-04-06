@@ -23,7 +23,7 @@ const listProjects = [
     },
     {
         name: "Gestium",
-        summary: "Création d'application et site web avec React Native de gestion des note de frais , en React Js et ExpressJS",
+        summary: "Création d'application et site web avec React Native de gestion des note de frais, en React Js et ExpressJS",
         logo: "http://drive.google.com/uc?export=view&id=1e_W808pZWYKvI6bU4p4hN89C2N3psxAF",
         url: "test"
     },
