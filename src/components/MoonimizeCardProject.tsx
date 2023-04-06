@@ -10,27 +10,27 @@ const listProjects = [
         url: "test"
     },
     {
-        name: "Happer",
-        summary: "Creation d'une application mobile pour la marque Woman et Luxury. Cette application permets de proposer des vetenements de createurs sur un reseau social dédié a la mode. ",
-        logo: "http://drive.google.com/uc?export=view&id=1oeY_UKiZPPMC6IbJI-L_Zttyd1KsRQAK",
+        name: "ServTop",
+        summary: "Création d'une application mobile et d'un site web permettant de référencer des serveurs privés de jeux-vidéos.",
+        logo: "http://drive.google.com/uc?export=view&id=18l7OoaLrXGB-GHik85NG0l0-vgUfyMeg",
         url: "test"
     },
     {
-        name: "Happer",
-        summary: "Creation d'une application mobile pour la marque Woman et Luxury. Cette application permets de proposer des vetenements de createurs sur un reseau social dédié a la mode. ",
-        logo: "http://drive.google.com/uc?export=view&id=1oeY_UKiZPPMC6IbJI-L_Zttyd1KsRQAK",
+        name: "IA AQUA",
+        summary: "Création d'APIs et d'une application mobile & Web pour un objet connecté de surveillance d'arrosage pour le milieu agricole.",
+        logo: "http://drive.google.com/uc?export=view&id=1T0qKSSKgLBNaZdB8aTROIiBbZTkSU3P9",
         url: "test"
     },
     {
-        name: "Happer",
-        summary: "Creation d'une application mobile pour la marque Woman et Luxury. Cette application permets de proposer des vetenements de createurs sur un reseau social dédié a la mode. ",
-        logo: "http://drive.google.com/uc?export=view&id=1oeY_UKiZPPMC6IbJI-L_Zttyd1KsRQAK",
+        name: "Gestium",
+        summary: "Création d'application et site web avec React Native de gestion des note de frais , en React Js et ExpressJS",
+        logo: "http://drive.google.com/uc?export=view&id=1e_W808pZWYKvI6bU4p4hN89C2N3psxAF",
         url: "test"
     },
     {
-        name: "Happer",
-        summary: "Creation d'une application mobile pour la marque Woman et Luxury. Cette application permets de proposer des vetenements de createurs sur un reseau social dédié a la mode. ",
-        logo: "http://drive.google.com/uc?export=view&id=1oeY_UKiZPPMC6IbJI-L_Zttyd1KsRQAK",
+        name: "Parky",
+        summary: "Parky est une solution de stationnement intelligent destiné aux usagés des smartcity. Elle se présente sous forme d'une application mobile pour les particuliers et d'un site web de gestion pour les mairie.",
+        logo: "http://drive.google.com/uc?export=view&id=1Be0uXMSOPSsHjR0ForF6k9qAAu8YNvu9",
         url: "test"
     },
 

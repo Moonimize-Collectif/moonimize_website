@@ -50,12 +50,17 @@
      opacity: 1;
 }
 
+.card:hover .icon {
+     opacity: 1;
+     filter: grayscale(0) invert(0);
+}
+
 .icon {
      width: 5em;
      color: white;
      display: inline-block;
      opacity: 0.8;
-     filter: grayscale(1);
+     filter: grayscale(1) invert(1);
 }
 
 .card .face.face1 .content i {
