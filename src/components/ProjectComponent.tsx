@@ -3,7 +3,7 @@ import globalStyle from '../styles/globals.css'
 import styles from '@/styles/ProjectComponent.module.css'
 import Link from 'next/link';
 
-const ProjectComponent = ({id, name, logo, description, categories, technology} : any) => {
+const ProjectComponent = ({id, objectId,name, logo, description, categories, technology} : any) => {
 
     const [category , setCategory ] = useState('')
 
@@ -27,7 +27,7 @@ const ProjectComponent = ({id, name, logo, description, categories, technology} 
     }
     if (id%2 == 0) {
         return  (
-            <Link className={styles.container} href={`/projects/${id}`}>
+            <Link className={styles.container} href={`/projects/${objectId}`}>
                 <div className={styles.divLogo}>
                     <img className={styles.logoImg} src={logo} alt={"Logo de "+name}/>
                 </div>
@@ -42,7 +42,7 @@ const ProjectComponent = ({id, name, logo, description, categories, technology} 
     }
     else {
         return  (
-            <Link href={`/projects/${id}`} className={styles.container}>
+            <Link href={`/projects/${objectId}`} className={styles.container}>
                 <div className={styles.divProjet}>
                     <h1>{name}</h1>
                     <h2>{category}</h2>
