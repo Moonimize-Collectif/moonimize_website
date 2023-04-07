@@ -55,11 +55,13 @@ export const MoonimizeContainerProject = ({ title, description, image }: any) =>
 
     return (
         <div style={{ display: "flex", flexDirection: "row", height: "auto", width:"100%",justifyContent: "center", alignItems: "center", flexWrap: "wrap" }}>
-            {
-                projects ? projects.map((project, index) => {
-                    return <MoonimizeCardProject key={index} title={project.name} description={project.summary} image={project.logo} />
-                }) : null
-            }
+            <div style={{ display: "flex", flexDirection: "row", height: "auto", width:"84%",justifyContent: "center", alignItems: "center", flexWrap: "wrap" }}>
+                {
+                    projects ? projects.map((project, index) => {
+                        return <MoonimizeCardProject key={index} title={project.name} description={project.summary} image={project.logo} />
+                    }) : null
+                }
+            </div>
         </div>
     )
 }

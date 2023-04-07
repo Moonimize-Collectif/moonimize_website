@@ -11,13 +11,13 @@ const MemberCard = ({reverse = false, marginTop, devName, devJob, devDesc, devPi
             <p className={styles.devDesc}>{devDesc}</p>
         </div>
         <div className={styles.cardPicSectionReverse}>
-            <div className={styles.memberPicReverse}></div>
+            <div style={{background: `url(${devPic})`}} className={styles.memberPicReverse}></div>
         </div>
     </div>
     :
-    <div className={styles.cardContainer}>
+    <div className={styles.cardContainer} style={{marginTop}}>
         <div className={styles.cardPicSection}>
-            <div className={styles.memberPic}></div>
+            <div style={{background: `url(${devPic})`}} className={styles.memberPic}></div>
         </div>
         <div className={styles.cardInfosSection}>
             <h3 className={styles.devName}>{devName}</h3>
