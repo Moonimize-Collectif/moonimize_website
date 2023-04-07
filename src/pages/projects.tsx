@@ -56,7 +56,7 @@ const Projects =  ({projects}) => {
                 <p style={{"color": "white", "textAlign": "center", "fontFamily": "ChakraPetch", "fontSize": "30px", "paddingBottom": "7%"}}>Aucunes réalisations</p> 
                 : 
                 projects.map((project, key) => (  
-                    <ProjectComponent id={key} name={project.name} logo={project.logo} description={project.summary} categories={project.categories} technology={project.technologies}/>  
+                    <ProjectComponent id={project._id} name={project.name} logo={project.logo} description={project.summary} categories={project.categories} technology={project.technologies}/>  
                 ))
             }
             

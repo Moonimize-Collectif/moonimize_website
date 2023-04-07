@@ -27,7 +27,7 @@ const ProjectComponent = ({id, name, logo, description, categories, technology} 
     }
     if (id%2 == 0) {
         return  (
-            <Link className={styles.container} href={""}>
+            <Link className={styles.container} href={`/projects/${id}`}>
                 <div className={styles.divLogo}>
                     <img className={styles.logoImg} src={logo} alt={"Logo de "+name}/>
                 </div>
@@ -42,7 +42,7 @@ const ProjectComponent = ({id, name, logo, description, categories, technology} 
     }
     else {
         return  (
-            <Link href={""} className={styles.container}>
+            <Link href={`/projects/${id}`} className={styles.container}>
                 <div className={styles.divProjet}>
                     <h1>{name}</h1>
                     <h2>{category}</h2>

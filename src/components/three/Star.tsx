@@ -34,10 +34,10 @@ export const StarComponent = (props : any) => {
 
     useEffect(() => {
         if (shiningPlus === true) {
-            setShining(shining => shining - 0.01)
+            setShining(shining => shining - 0.08)
         }
         else {
-            setShining(shining => shining + 0.01)
+            setShining(shining => shining + 0.08)
         }
     }, [bloom])
 
@@ -45,7 +45,7 @@ export const StarComponent = (props : any) => {
         if (shining >= 6) {
             setShiningPlus(true)
         }
-        if (shining <= 0.5) {
+        if (shining <= 0) {
             setShiningPlus(false)
         }
     }, [shining])

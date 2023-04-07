@@ -48,6 +48,23 @@ export default function Home() {
           paddingLeft={"0"}
         />
       </div>
+      <div style={{ display: "flex", flexDirection: "column", height: "auto", paddingTop: "20px", paddingBottom: "20px" }}>
+        <div style={{ display: "flex", flexDirection: "column", height: "14vh" }}>
+          <TitleScreen firstTitle={"SERVICES"}
+            secondTitle={"Ce que l'on sait faire"}
+            display={"block"}
+            marginTop={"0%"}
+            marginBottom={"0%"}
+            colorFirstTitle={"white"}
+            colorSecondTitle={"#1ACAD5"}
+            sizeSecondTitle={"46px"}
+            sizeFirstTitle={"44px"}
+            textAlign={""}
+            paddingLeft={"8%"}
+          />
+        </div>
+        <MoonimizeContainerService />
+      </div>
       <div className={styles.divServices}>
         <div className={styles.divProcess}>
           <div style={{ display: "flex", flexDirection: "column", height: "20vh" }}>
@@ -77,24 +94,7 @@ export default function Home() {
           <CardProcess number={"006"} title={"Livraison"} description={"Nous découpons le projet en plusieurs sous projet pour les intégrer au sein d’un calendrier qui sera partagé au client."} positionNumber={"left"} />
         </div>
       </div>
-      <div style={{ display: "flex", flexDirection: "column", height: "auto", paddingTop: "20px", paddingBottom: "20px" }}>
-        <div style={{ display: "flex", flexDirection: "column", height: "14vh" }}>
-          <TitleScreen firstTitle={"SERVICES"}
-            secondTitle={"Ce que l'on sait faire"}
-            display={"block"}
-            marginTop={"0%"}
-            marginBottom={"0%"}
-            colorFirstTitle={"white"}
-            colorSecondTitle={"#1ACAD5"}
-            sizeSecondTitle={"46px"}
-            sizeFirstTitle={"44px"}
-            textAlign={""}
-            paddingLeft={"8%"}
-          />
-        </div>
-        <MoonimizeContainerService />
-      </div>
-      <div style={{ display: "flex", flexDirection: "column", height: "auto", paddingTop: "140px", paddingBottom: "50px" }}>
+      <div style={{ display: "flex", flexDirection: "column", height: "auto", paddingTop: "50px", paddingBottom: "50px" }}>
         <div style={{ display: "flex", flexDirection: "column", height: "14vh" }}>
           <TitleScreen firstTitle={"RÉALISATION"}
             secondTitle={"Nos étoiles"}
