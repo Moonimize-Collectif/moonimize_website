@@ -11,13 +11,13 @@ const Contact = ({}) => {
     const [secondTitileSize, setSecondTitleSize] = useState("0px")
     console.log(screenWidth)
     useEffect(() => {
-        if (screenWidth > 670){
-            setFirstTitleSize("140px")
-            setSecondTitleSize("120px")
-        }else {
-            setFirstTitleSize("110px")
-            setSecondTitleSize("90px")
-        }    
+      if (screenWidth > 670) {
+        setFirstTitleSize("110px")
+        setSecondTitleSize("140px")
+      } else {
+        setFirstTitleSize("4rem")
+        setSecondTitleSize("4rem")
+      }
     });
   
   return (

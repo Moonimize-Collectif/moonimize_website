@@ -26,12 +26,13 @@
 
 .formTitle {
     color: #fff;
-    font-size: 63px;
+    font-size: 4.5em;
     text-align: center;
     font-weight: 400;
     font-family: ChakraPetch, serif;
     position: relative;
 }
+
 
 .divForm, .divFormButton {
     width: 100%;
@@ -99,4 +100,26 @@
     font-weight: 400;
     font-family: ChakraPetch, serif;
     position: relative;
+}
+
+@media screen and (max-width: 768px) {
+    .divCardProcess {
+        width: 100%;
+        padding: 40px;
+    }
+    .formTitle {
+        font-size: 3.2em;
+    }
+    .labelForm {
+        font-size: 1.5em;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .formTitle {
+        font-size: 2.5em;
+    }
+    .labelForm {
+        font-size: 1.2em;
+    }
 }
