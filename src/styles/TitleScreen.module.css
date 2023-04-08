@@ -14,3 +14,36 @@
     position: relative;
     top:14%;
 }
+
+.firstTitleInPage {
+    font-family: ChakraPetch;
+    top:-14%;
+    font-size: 3rem;
+    position: relative;
+}
+
+.secondTitleInPage {
+    font-family: MilkiWalki;
+    font-weight: 500;
+    font-size: 4rem;
+    position: relative;
+    top:14%;
+}
+
+@media screen and (max-width: 768px) {
+    .firstTitleInPage {
+        font-size: 2rem;
+    }
+    .secondTitleInPage {
+        font-size: 3rem;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .firstTitleInPage {
+        font-size: 1.5rem;
+    }
+    .secondTitleInPage {
+        font-size: 2.5rem;
+    }
+}

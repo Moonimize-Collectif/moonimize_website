@@ -24,8 +24,8 @@ export default function Home() {
       setFirstTitleSize("110px")
       setSecondTitleSize("140px")
     } else {
-      setFirstTitleSize("88px")
-      setSecondTitleSize("110px")
+      setFirstTitleSize("4rem")
+      setSecondTitleSize("4rem")
     }
   });
 
@@ -42,6 +42,7 @@ export default function Home() {
           marginBottom={"0%"}
           colorFirstTitle={"white"}
           colorSecondTitle={"#1ACAD5"}
+          customSize={true}
           sizeSecondTitle={secondTitileSize}
           sizeFirstTitle={firstTitleSize}
           textAlign={"center"}
@@ -57,8 +58,6 @@ export default function Home() {
             marginBottom={"0%"}
             colorFirstTitle={"white"}
             colorSecondTitle={"#1ACAD5"}
-            sizeSecondTitle={"46px"}
-            sizeFirstTitle={"44px"}
             textAlign={""}
             paddingLeft={"8%"}
           />
@@ -75,8 +74,6 @@ export default function Home() {
               marginBottom={"0%"}
               colorFirstTitle={"white"}
               colorSecondTitle={"#1ACAD5"}
-              sizeSecondTitle={"46px"}
-              sizeFirstTitle={"44px"}
               textAlign={""}
               paddingLeft={"8%"}
             />
@@ -103,8 +100,6 @@ export default function Home() {
             marginBottom={"0%"}
             colorFirstTitle={"white"}
             colorSecondTitle={"#1ACAD5"}
-            sizeSecondTitle={"46px"}
-            sizeFirstTitle={"44px"}
             textAlign={""}
             paddingLeft={"8%"}
           />

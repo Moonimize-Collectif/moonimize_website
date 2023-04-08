@@ -61,7 +61,7 @@ export const MoonimizeContainerService = ({ title, description, image }: any) =>
 
     return (
         <div style={{ display: "flex", flexDirection: "row", height: "auto", width:"100%",justifyContent: "center", alignItems: "center", flexWrap: "wrap" }}>
-            <div style={{ display: "grid", gridTemplateColumns: "repeat(3, 1fr)", gridTemplateRows: "repeat(2, 1fr)", columnGap: "44px", rowGap: "44px", width: "84%"  }}>
+            <div className={styles.gridServicesContainer}>
             {
                 projects ? projects.map((project, index) => {
                     return <MoonimizeCardService key={index} title={project.name} description={project.summary} image={project.logo} />
