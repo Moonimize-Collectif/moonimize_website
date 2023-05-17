@@ -1,0 +1,90 @@
+.headerResponsiveContainer {
+	width: 100%;
+	/* min-height: 104px; */
+	position: fixed;
+	top: 0;
+	display: flex;
+	justify-content: flex-end;
+	z-index: 5;
+	padding-right: 6vw;
+	padding-top: 6vw;
+}
+
+.hamburger {
+	width: 40px;
+	height: 30px;
+	display: flex;
+	justify-content: space-around;
+	flex-direction: column;
+	z-index: 11;
+	position: relative;
+}
+
+.burger {
+	width: 40px;
+	height: 5px;
+	border-radius: 10px;
+	background-color: white;
+	transform-origin: center !important;
+	transition: all 0.25s linear;
+}
+
+.burger1 {
+	/* margin-top: 30px; */
+	/* transform: rotate(90deg); */
+	position: absolute;
+	top: 0px;
+}
+
+.burger3 {
+	position: absolute;
+	bottom: 0px;
+}
+
+.modalResponsiveHeader {
+	/* background: red; */
+	width: 100%;
+	height: 100vh;
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: none;
+	opacity: 0;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	z-index: 10;
+	transition: all 0.25s ease-in-out;
+}
+
+.modalResponsiveHeader p,
+.modalResponsiveHeader a {
+	color: white;
+	font-size: 38px;
+	font-weight: bold;
+	text-transform: uppercase;
+	font-family: "ChakraPetch";
+	margin: 5px 0px 5px 0px;
+}
+
+.modalResponsiveHeader p span {
+	color: rgba(255, 255, 255, 0.5);
+	font-size: 20px;
+}
+
+.modalResponsiveHeader a:hover p {
+	cursor: pointer;
+	color: #1acad5;
+}
+
+.modalResponsiveHeaderBg {
+	background: #0e0e0e;
+	width: 500vh;
+	height: 500vh;
+	position: absolute;
+	border-radius: 50%;
+	transform-origin: center;
+	transform: translate(500vh, -400vh);
+	display: none;
+	transition: all 0.85s ease-in-out;
+}
